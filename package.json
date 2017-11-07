@@ -1,0 +1,23 @@
+{
+  "name": "vossler",
+  "version": "1.0.0",
+  "description": "Vossler Media Group",
+  "main": "_site/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomplusplus/vossler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomplusplus/vossler/issues"
+  },
+  "homepage": "https://github.com/tomplusplus/vossler#readme",
+  "dependencies": {
+    "scrollmonitor": "^1.2.3",
+    "scrollmonitor-parallax": "^1.1.1"
+  }
+}

@@ -1,0 +1,117 @@
+/***** LOADERS *************/
+
+//LOADER ELLIPSES
+
+.loader-ellipsis {
+  top: -.625em;
+  width: .625em;
+  height: .625em;
+  border-radius: 50%;
+  position: relative;
+  -webkit-animation: loader-ellipsis 1.5s infinite ease-in-out both -.14s;
+  -o-animation: loader-ellipsis 1.5s infinite ease-in-out both -.14s;
+  animation: loader-ellipsis 1.5s infinite ease-in-out both -.14s;
+}
+
+.loader-ellipsis:after,.loader-ellipsis:before {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  border-radius: 50%;
+  -webkit-animation: loader-ellipsis 1.5s infinite ease-in-out both;
+  -o-animation: loader-ellipsis 1.5s infinite ease-in-out both;
+  animation: loader-ellipsis 1.5s infinite ease-in-out both;
+}
+
+.loader-ellipsis:before {
+  left: -.875em;
+  -webkit-animation-delay: -.28s;
+  -o-animation-delay: -.28s;
+  animation-delay: -.28s
+}
+
+.loader-ellipsis:after {
+  left: .875em
+}
+
+
+/********* KEYFRAMES *******************/
+
+// LOADER DEFAULT
+@-webkit-keyframes loader-ellipsis {
+  0%,100%,80% {
+    -webkit-box-shadow: 0 .625em 0 -.325em #ffffff;
+    box-shadow: 0 .625em 0 -.325em #ffffff;
+  }
+
+  40% {
+    -webkit-box-shadow: 0 .625em 0 0 #ffffff;
+    box-shadow: 0 .625em 0 0 #ffffff;
+  }
+}
+
+@-o-keyframes loader-ellipsis {
+  0%,100%,80% {
+    box-shadow: 0 .625em 0 -.325em #ffffff;
+  }
+
+  40% {
+    box-shadow: 0 .625em 0 0 #ffffff;
+  }
+}
+
+@keyframes loader-ellipsis {
+  0%,100%,80% {
+    -webkit-box-shadow: 0 .625em 0 -.325em #ffffff;
+    box-shadow: 0 .625em 0 -.325em #ffffff;
+  }
+
+  40% {
+    -webkit-box-shadow: 0 .625em 0 0 #ffffff;
+    box-shadow: 0 .625em 0 0 #ffffff;
+  }
+}
+
+
+.loader-circle{
+    height: 0.5rem;
+    width: 0.5rem;
+    position: relative;
+    border-radius: 50%;
+    background: #fff;
+    transform-origin: -100% -100%;
+    box-shadow: -1.5rem -1.5rem 0px 0px #fff;
+    display: none;
+    &.show{
+      display: block;
+      animation: spin 800ms infinite linear;
+    }
+    
+    &:after, &:before{
+        content:'';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        border-radius: 50%;
+        background: #ffffff;
+    }
+    &:after{
+        transform: translate(60%, -190%);
+        box-shadow: -2.1rem 0.4rem 0px 0px #fff;
+    }
+    &:before{
+        transform: translate(-200%, 58%);
+        box-shadow: 0.51rem -2.08rem 0px 0px #fff;
+    }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

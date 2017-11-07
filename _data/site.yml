@@ -1,0 +1,25 @@
+title: Vossler
+
+logo:
+  source: /media/logo.png
+  size: 300px
+
+logo_dark:
+  source: /media/logo-dark.png
+  size: 300px
+
+header_background: /media/head_background.png
+
+footer_background: /media/footer_background.png
+
+reel:
+  source: /media/reel2017.mp4
+  preview: /media/reel2017.mp4
+  embed: false
+
+reel_poster: /media/reel_poster.png
+
+seemless_video:
+  poster: /media/seemless_video_poster.png
+  loop: /media/Vossler_VS_Animal_Loop.mp4
+  source: ''

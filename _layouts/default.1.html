@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+{% assign siteData = site.data.site %}
+{% assign portfolio = site.data.portfolio %}
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>{{ site.title }}</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="{{site.baseurl}}/main.css" />
+    <meta name="description" content="{{site.description}}" />
+    <meta name="author" content="{{site.author}}" />
+
+</head>
+
+<body>
+    <div class="background-images">
+        <div class="background-image" style="background-image:url('{{ siteData.background_image }}')"></div>
+    </div>
+    <div class="container">
+
+        <div class="window">
+            <div class="logo"><img src="{{ siteData.logo.source }}" width="{{ siteData.logo.size }}" /></div>
+            <div class="main-title">{{ siteData.title }}</div>
+        </div>
+
+        <div class="banner">
+            <div class="content banner-content-top">
+                <h3 class="width-half margin-center">We are a hybrid</h3>
+                <h2 class="width-half margin-center font-weight-800">CREATIVE AGENCY + PRODUCTION COMPANY</h2>
+            </div>
+            <div class="content banner-content-bottom">
+                <h4 class="width-half margin-center">Fiercely focused on</h4>
+                <h2 class="width-half margin-center">Video</h2>
+            </div>
+        </div>
+
+        <div class="window reel-window" style="background-image:url('{{ siteData.reel_background_image }}')">
+            <div class="play-icon"></div>
+        </div>
+
+        <div class="banner left">
+            <div class="content banner-content-middle">
+                <h4 class="width-half margin-center">We make</h4>
+                <h2 class="width-half margin-center">Stories that move</h2>
+            </div>
+        </div>
+
+        <div class="window portfolio-grid-container">
+            <div class="portfolio-grid">
+                <div class="portfolio-item" style="background-image:url('{{ portfolio.first.image }}')"></div>
+                <div class="portfolio-item" style="background-image:url('{{ portfolio.second.image }}')"></div>
+                <div class="portfolio-item" style="background-image:url('{{ portfolio.third.image }}')"></div>
+                <div class="portfolio-item" style="background-image:url('{{ portfolio.fourth.image }}')"></div>
+                <div class="portfolio-item" style="background-image:url('{{ portfolio.fifth.image }}')"></div>
+                <div class="portfolio-item" style="background-image:url('{{ portfolio.sixth.image }}')"></div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="content banner-content-middle">
+                <h4 class="width-half margin-center">We are a</h4>
+                <h2 class="width-half margin-center">New kind of agency animal</h2>
+                <h4 class="width-half margin-center">For a new media landscape</h4>
+                <div class="video-container" style="background-image:url('{{ siteData.seemless_video.poster }}')">
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="banner straight">
+            <div class="content">
+                <h4 class="width-half margin-center">We're People. We're Nice.</h4>
+            </div>
+        </div>
+
+        <div class="window pepole-grid-container">
+            <div class="people-grid">
+            {% for person in site.data.people %}
+                <div class="person" style="background-image:url('{{ person.image }}')"></div>
+            {% endfor %}
+            </div>
+        </div>
+
+        <div class="banner straight">
+        </div>
+
+        <div class="banner left">
+            <div class="content banner-content-top">
+                <h4 class="width-half margin-center">We are</h4>
+                <h2 class="width-half margin-center">Simplifying the agency model</h2>
+            </div>
+        </div>
+
+        <div class="window core-window" style="background-image:url('{{ siteData.core_background_image }}')">
+            <div class="core-window-text">We have every core discipline in house</div>
+        </div>
+
+
+        <div class="banner">
+            <div class="content banner-content-middle">
+                <h4 class="width-half margin-center">We are</h4>
+                <h2 class="width-half margin-center">Here to serve</h2>
+            </div>
+        </div>
+
+        <div class="banner straight">
+            <div class="content banner-content-middle"></div>
+        </div>
+
+
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="site.js"></script>
+
+</body>
+
+</html>
