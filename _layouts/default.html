@@ -127,12 +127,12 @@
 
                     <div class="portfolio-tile front">
                         {% for video in site.data.portfolio %}
-                            {% if video.featured == 1 %}<div class="portfolio-item-wrapper" data-src="{{ video.source }}" data-embed="{{ video.embed }}"><div class="portfolio-item" style="background-image:url('{% if video.featured_poster %}{{ video.featured_poster }}{% else %}{{ video.poster }}{% endif %}')"><div class="play-icon"></div></div></div>{% endif %}
-                            {% if video.featured == 2 %}<div class="portfolio-item-wrapper" data-src="{{ video.source }}" data-embed="{{ video.embed }}"><div class="portfolio-item" style="background-image:url('{{ video.featured_poster }}')"><div class="play-icon"></div></div></div>{% endif %}
-                            {% if video.featured == 3 %}<div class="portfolio-item-wrapper" data-src="{{ video.source }}" data-embed="{{ video.embed }}"><div class="portfolio-item" style="background-image:url('{{ video.featured_poster }}')"><div class="play-icon"></div></div></div>{% endif %}
-                            {% if video.featured == 4 %}<div class="portfolio-item-wrapper" data-src="{{ video.source }}" data-embed="{{ video.embed }}"><div class="portfolio-item" style="background-image:url('{{ video.featured_poster }}')"><div class="play-icon"></div></div></div>{% endif %}
-                            {% if video.featured == 5 %}<div class="portfolio-item-wrapper" data-src="{{ video.source }}" data-embed="{{ video.embed }}"><div class="portfolio-item" style="background-image:url('{{ video.featured_poster }}')"><div class="play-icon"></div></div></div>{% endif %}
-                            {% if video.featured == 6 %}<div class="portfolio-item-wrapper" data-src="{{ video.source }}" data-embed="{{ video.embed }}"><div class="portfolio-item" style="background-image:url('{{ video.featured_poster }}')"><div class="play-icon"></div></div></div>{% endif %}
+                            {% if video.featured == 1 %}<div class="portfolio-item-wrapper" data-src="{{ video.source }}" data-embed="{{ video.embed }}"><div class="portfolio-item" style="background-image:url('{% if video.featured_image %}{{ video.featured_image }}{% else %}{{ video.image }}{% endif %}')"><div class="play-icon"></div></div></div>{% endif %}
+                            {% if video.featured == 2 %}<div class="portfolio-item-wrapper" data-src="{{ video.source }}" data-embed="{{ video.embed }}"><div class="portfolio-item" style="background-image:url('{{ video.featured_image }}')"><div class="play-icon"></div></div></div>{% endif %}
+                            {% if video.featured == 3 %}<div class="portfolio-item-wrapper" data-src="{{ video.source }}" data-embed="{{ video.embed }}"><div class="portfolio-item" style="background-image:url('{{ video.featured_image }}')"><div class="play-icon"></div></div></div>{% endif %}
+                            {% if video.featured == 4 %}<div class="portfolio-item-wrapper" data-src="{{ video.source }}" data-embed="{{ video.embed }}"><div class="portfolio-item" style="background-image:url('{{ video.featured_image }}')"><div class="play-icon"></div></div></div>{% endif %}
+                            {% if video.featured == 5 %}<div class="portfolio-item-wrapper" data-src="{{ video.source }}" data-embed="{{ video.embed }}"><div class="portfolio-item" style="background-image:url('{{ video.featured_image }}')"><div class="play-icon"></div></div></div>{% endif %}
+                            {% if video.featured == 6 %}<div class="portfolio-item-wrapper" data-src="{{ video.source }}" data-embed="{{ video.embed }}"><div class="portfolio-item" style="background-image:url('{{ video.featured_image }}')"><div class="play-icon"></div></div></div>{% endif %}
                         {% endfor %}
                         <!-- <div class="portfolio-item-wrapper"><div class="portfolio-item" style="background-image:url('{{ highlights.second.image }}')"></div></div>
                         <div class="portfolio-item-wrapper"><div class="portfolio-item" style="background-image:url('{{ highlights.third.image }}')"></div></div>
@@ -143,9 +143,9 @@
 
                     <div class="portfolio-tile back-side">
                          {% for video in site.data.portfolio %}
-                            {% if video.featured == 7 %}<div class="portfolio-item back-side" style="background-image:url('{{ video.featured_poster }}')" data-src="{{ video.source }}" data-embed="{{ video.embed }}"><div class="play-icon"></div></div>{% endif %}
-                            {% if video.featured == 8 %}<div class="portfolio-item back-side" style="background-image:url('{{ video.featured_poster }}')" data-src="{{ video.source }}" data-embed="{{ video.embed }}"><div class="play-icon"></div></div>{% endif %}
-                            {% if video.featured == 9 %}<div class="portfolio-item back-side" style="background-image:url('{{ video.featured_poster }}')" data-src="{{ video.source }}" data-embed="{{ video.embed }}"><div class="play-icon"></div></div>{% endif %}
+                            {% if video.featured == 7 %}<div class="portfolio-item back-side" style="background-image:url('{{ video.featured_image }}')" data-src="{{ video.source }}" data-embed="{{ video.embed }}"><div class="play-icon"></div></div>{% endif %}
+                            {% if video.featured == 8 %}<div class="portfolio-item back-side" style="background-image:url('{{ video.featured_image }}')" data-src="{{ video.source }}" data-embed="{{ video.embed }}"><div class="play-icon"></div></div>{% endif %}
+                            {% if video.featured == 9 %}<div class="portfolio-item back-side" style="background-image:url('{{ video.featured_image }}')" data-src="{{ video.source }}" data-embed="{{ video.embed }}"><div class="play-icon"></div></div>{% endif %}
                         {% endfor %}
                     </div>
 
@@ -185,7 +185,7 @@
             <div class="banner left bottom-shadow-inverted"></div>
             <div class="seemless-video-container" >
                 <video class="seemless-video-loop" src="{{siteData.seemless_video.loop}}" autoplay="true" loop="true"></video>
-                <!-- <div class="background-image" style="background-image:url('{{ siteData.seemless_video.poster }}')"></div> -->
+                <!-- <div class="background-image" style="background-image:url('{{ siteData.seemless_video.image }}')"></div> -->
             </div>
         </section>
 
@@ -300,7 +300,7 @@
     <div class="fullscreen-portfolio fullscreen-fixed">
         <div class="video-grid">
             {% for video in site.data.portfolio %}
-                <div class="video-tile" data-src="{{video.source}}" data-embed="{{video.embed}}" style="background-image:url('{{ video.poster }}')">
+                <div class="video-tile" data-src="{{video.source}}" data-embed="{{video.embed}}" style="background-image:url('{{ video.image }}')">
                     <div class="video-info">{{ video.title }}</div>
                 </div>
             {% endfor %}
