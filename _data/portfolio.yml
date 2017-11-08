@@ -5,7 +5,7 @@
   featured: 1
   featured_poster: media/portfolio/featured-1.png
   image: media/portfolio/featured-1.png
-  video: media/portfolio/featured-1.png
+  featured_image: media/portfolio/featured-1.png
   source: //player.vimeo.com/video/224385329
   embed: true
 
