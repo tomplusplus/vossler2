@@ -1,25 +1,21 @@
+site_name: Vossler
+
 title: Vossler
 
 logo:
-  source: /media/logo.png
-  size: 300px
+  path: /media/logo.png
 
-logo_dark:
-  source: /media/logo-dark.png
-  size: 300px
+header_image: /media/head_background.png
 
-header_background: /media/head_background.png
-
-footer_background: /media/footer_background.png
+footer_image: /media/footer_background.png
 
 reel:
-  source: /media/reel2017.mp4
-  preview: /media/reel2017.mp4
+  path: /media/reel2017.mp4
+  preview_path: /media/reel2017.mp4
+  preview_image:
   embed: false
 
-reel_poster: /media/reel_poster.png
-
 seemless_video:
-  poster: /media/seemless_video_poster.png
-  loop: /media/Vossler_VS_Animal_Loop.mp4
-  source: ''
+  path: 
+  preview_path: /media/Vossler_VS_Animal_Loop.mp4
+  

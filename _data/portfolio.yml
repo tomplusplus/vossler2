@@ -65,38 +65,48 @@
 
 - title: "BTS: T-Mobile ONEsie"
   description: 
+  featured: 9
+  featured_image: media/portfolio/featured-9.png
   image: media/portfolio/bts-tmobile-onsie.png
   source: //player.vimeo.com/video/224714701
   embed: true
 
 - title: "Vossler Social: Have a Super 4th"
   description: 
+  featured: 
+  featured_image: 
   image: media/portfolio/vossler-super-4th.png
-  featured: 9
-  featured_image: media/portfolio/featured-9.png
   source: //player.vimeo.com/video/226081059
   embed: true
 
 - title: "Vossler: Models In The Making"
   description: 
+  eatured: 
+  featured_image: 
   image: media/portfolio/vossler-models.png
   source: //player.vimeo.com/video/226079180
   embed: true
 
 - title: "City Church: Vision Day 2015"
   description: 
+  featured: 
+  featured_image: 
   image: media/portfolio/city-church-vision-day.png
   source: //player.vimeo.com/video/140082326
   embed: true
 
 - title: "T-Mobile: Un-carrier Next Level"
   description: 
+  featured: 
+  featured_image: 
   image: media/portfolio/tmobile-uncarrier.jpg
   source: //player.vimeo.com/video/224714271
   embed: true
 
 - title: "T-Mobile: Our 5G Future"
   description: 
+  featured: 
+  featured_image: 
   image: media/portfolio/tmobile-5g-future.png
   source: //player.vimeo.com/video/224714373
   embed: true

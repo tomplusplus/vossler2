@@ -21,8 +21,8 @@
     <div class="container">
 
         <section class="header" >
-            <div class="background-image" style="background-image:url('{{ siteData.header_background }}')" ></div>
-            <div class="logo"><img src="{{ siteData.logo.source }}" /></div>
+            <div class="background-image" style="background-image:url('{{ siteData.header_image }}')" ></div>
+            <div class="logo"><img src="{{ siteData.logo.path }}" /></div>
             <div class="main-title">{{ siteData.title }}</div>
 
             <div class="menu">
@@ -50,22 +50,12 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="content bottom-content">
-                <div>
-                    <h4>Fiercely focused on</h4>
-                    <h2 class="flip-text-container">
-                        <span class="flip-text first"><span>Video</span></span>
-                        <span class="flip-text second"><span>Audio</span></span>
-                        <span class="flip-text third"><span>Experience</span></span>
-                    </h2>
-                </div>
-            </div> -->
         </section>
 
         <section class="reel-section" >
-            <!-- <div class="background-image" style="background-image:url('{{ siteData.reel_poster }}')"></div> -->
+            <!-- <div class="background-image" style="background-image:url('{{ siteData.image }}')"></div> -->
             <div id="reelPlayer">
-                <!-- <video src="{{siteData.reel.preview}}" autoplay="true" loop="true" muted="true"></video> -->
+                <!-- <video src="{{siteData.reel.preview_image}}" autoplay="true" loop="true" muted="true"></video> -->
             </div>
             <div class="player-curtain"></div>
             
@@ -74,12 +64,12 @@
                 <div class="reel-select-container">
                 <h2 class="white">How do you feel?</h2>
                     <div class="reel-buttons">
-                        <div class="reel-button serious" data-src="{{siteData.reel.source}}" data-embed="{{siteData.reel.embed}}">SERIOUS</div>
-                        <div class="reel-button hilarious" data-src="{{siteData.reel.source}}" data-embed="{{siteData.reel.embed}}">HILARIOUS</div>
+                        <div class="reel-button serious" data-src="{{siteData.reel.path}}" data-embed="{{siteData.reel.embed}}">SERIOUS</div>
+                        <div class="reel-button hilarious" data-src="{{siteData.reel.path}}" data-embed="{{siteData.reel.embed}}">HILARIOUS</div>
                     </div>
                 </div>
             </div>
-            <!-- <h4 class="white">Reel</h4> -->
+
 
         </section>
 
@@ -90,11 +80,7 @@
                 <div class="inline">
                     <h3>Fiercely focused on</h3>
                     <h2>Video</h2>
-                    <!-- <h2 class="flip-text-container">
-                        <span class="flip-text first"><span>Video</span></span>
-                        <span class="flip-text second"><span>Audio</span></span>
-                        <span class="flip-text third"><span>Experience</span></span>
-                    </h2> -->
+
                 </div>
             </div>
 
@@ -105,25 +91,10 @@
             <div class="fixed-wrapper">
                 <div class="banner left"></div>
                 <div class="banner bottom"></div>
-                <!-- <div class="banner-wrapper">
-                    <div class="content">
-
-                        <div class="portfolio-text-swap top">
-                            <h4>We make</h4>
-                            <h2>Stories that move</h2>
-
-                        </div>
-                        <div class="portfolio-text-swap bottom">
-                            <h4>We make</h4>
-                            <h2>Visual + Audio Adventures</h2>
-                        </div>
-
-                    </div>
-                </div> -->
 
                 <h5>Full Portfolio</h5>
                 <div class="portfolio-grid">
-                <!-- <div data-475p="top:0vh" data-595p="top: -130vh"  class="portfolio-grid"> -->
+
 
                     <div class="portfolio-tile front">
                         {% for video in site.data.portfolio %}
@@ -134,11 +105,6 @@
                             {% if video.featured == 5 %}<div class="portfolio-item-wrapper" data-src="{{ video.source }}" data-embed="{{ video.embed }}"><div class="portfolio-item" style="background-image:url('{{ video.featured_image }}')"><div class="play-icon"></div></div></div>{% endif %}
                             {% if video.featured == 6 %}<div class="portfolio-item-wrapper" data-src="{{ video.source }}" data-embed="{{ video.embed }}"><div class="portfolio-item" style="background-image:url('{{ video.featured_image }}')"><div class="play-icon"></div></div></div>{% endif %}
                         {% endfor %}
-                        <!-- <div class="portfolio-item-wrapper"><div class="portfolio-item" style="background-image:url('{{ highlights.second.image }}')"></div></div>
-                        <div class="portfolio-item-wrapper"><div class="portfolio-item" style="background-image:url('{{ highlights.third.image }}')"></div></div>
-                        <div class="portfolio-item-wrapper"><div class="portfolio-item" style="background-image:url('{{ highlights.fourth.image }}')"></div></div>
-                        <div class="portfolio-item-wrapper"><div class="portfolio-item" style="background-image:url('{{ highlights.fifth.image }}')"></div></div>
-                        <div class="portfolio-item-wrapper"><div class="portfolio-item" style="background-image:url('{{ highlights.sixth.image }}')"></div></div> -->
                     </div>
 
                     <div class="portfolio-tile back-side">
@@ -169,8 +135,6 @@
             </div>
         </section>
 
-        <!-- <div class="fixed-push-window"></div> -->
-
         <section class="banner-section third-banner" >
             <div class="banner bottom-shadow"></div>
             <div class="content">
@@ -184,8 +148,7 @@
         <section class="seemless-video-section" >
             <div class="banner left bottom-shadow-inverted"></div>
             <div class="seemless-video-container" >
-                <video class="seemless-video-loop" src="{{siteData.seemless_video.loop}}" autoplay="true" loop="true"></video>
-                <!-- <div class="background-image" style="background-image:url('{{ siteData.seemless_video.image }}')"></div> -->
+                <video class="seemless-video-loop" src="{{siteData.seemless_video.preview_path}}" autoplay="true" loop="true"></video>
             </div>
         </section>
 
@@ -218,7 +181,7 @@
         <section  class="scrolling-text-section" >
              {% for slide in site.data.slides %}
             <div class="scrolling-text-container">
-                <div class="background-image" style="background-image:url('{{ slide.background }}')"></div>
+                <div class="background-image" style="background-image:url('{{ slide.image }}')"></div>
                 <div class="scrolling-text">{{ slide.text }}</div>
             </div>
              {% endfor %}
@@ -226,7 +189,7 @@
 
         <section class="footer" >
             <div class="banner"></div>
-            <div class="background-image" style="background-image:url('{{ siteData.footer_background }}')"></div>
+            <div class="background-image" style="background-image:url('{{ siteData.footer_image}}')"></div>
             <div class="content banner-content-middle">
                 <h4 class="width-half margin-center">We are</h4>
                 <h2 class="width-half margin-center">Here to serve</h2>
@@ -242,7 +205,7 @@
 
             <h5><a href="https://vossler.bamboohr.com/jobs/" target="_blank">Want to work here?</a></h5>
             <div class="footer-bar">
-                <div class="footer-logo"><img src="{{ siteData.logo.source }}" class="light" /><img src="{{ siteData.logo_dark.source }}" class="dark" /></div>
+                <div class="footer-logo"><img src="{{ siteData.logo.path }}" class="light" /></div>
                 <p class="footer-text">
                     <span>Copyright &copy; 2017 Vossler</span>
                     <span class="bar"></span>
@@ -274,7 +237,6 @@
     <!-- FULL SCREEN VIDEO -->
 
     <div class="video-player-container">
-        <!-- <div id="videoPlayerEmbed" class="video-player"></div> -->
         <video id="videoPlayer" class="video-player" controls="true"></video>
         <div class="loader"><div class="loader-circle"></div></div>
         <div class="close-video close-x"></div>
@@ -282,7 +244,6 @@
 
     <!-- FULL SCREEN PEOPLE -->
     <div class="fullscreen-people fullscreen-fixed">
-        <!-- <div class="dark-banner"><h2>Everyone</h2></div> -->
         <div class="people-grid">
             {% for person in site.data.people %}
                 <div class="person" style="background-image:url('{{ person.image }}')">
