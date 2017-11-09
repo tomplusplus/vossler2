@@ -53,9 +53,9 @@
         </section>
 
         <section class="reel-section" >
-            <!-- <div class="background-image" style="background-image:url('{{ siteData.image }}')"></div> -->
+            <!-- <div class="background-image" style="background-image:url('{{ siteData.reel.preview_image }}')"></div> -->
             <div id="reelPlayer">
-                <!-- <video src="{{siteData.reel.preview_image}}" autoplay="true" loop="true" muted="true"></video> -->
+                <video class="reel-video-player" src="{{siteData.reel.preview_path}}" loop="true" muted="true"></video>
             </div>
             <div class="player-curtain"></div>
             
@@ -148,7 +148,7 @@
         <section class="seemless-video-section" >
             <div class="banner left bottom-shadow-inverted"></div>
             <div class="seemless-video-container" >
-                <video class="seemless-video-loop" src="{{siteData.seemless_video.preview_path}}" autoplay="true" loop="true"></video>
+                <video class="seemless-video-loop" src="{{siteData.seemless_video.preview_path}}" loop="true"></video>
             </div>
         </section>
 
@@ -271,7 +271,8 @@
 
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script> -->
     <!-- <script type="text/javascript" src="libs/skrollr.min.js"></script> -->
-    <script type="text/javascript" src="libs/scroll-watcher.js"></script>
+    <script type="text/javascript" src="libs/scroll-watcher-2.js"></script>
+    <!-- <script type="text/javascript" src="libs/scroll-watcher.js"></script> -->
     <!-- <script type="text/javascript" src="libs/scrollMonitor.js"></script> -->
     <script type="text/javascript" src="libs/vimeo-player.js"></script>
     <!-- <script src="https://player.vimeo.com/api/player.js"></script> -->

@@ -191,6 +191,7 @@
         reel:$('.reel-section'),
         reelContent:$('.reel-section .content'),
         reelPlay: $('.reel-play-container'),
+        reelVideo: $('.reel-video-player'),
         secondBanner: $('.second-banner'),
         secondBannerContent: $('.second-banner .content'),
         portfolio: $('.portfolio-section'),
@@ -203,6 +204,7 @@
         thirdBannerContent: $('.third-banner .content'),
         seemlessVideo: $('.seemless-video-section'),
         seemlessVideoContent: $('.seemless-video-section .content'),
+        seemlessVideoLoop: $('.seemless-video-loop'),
         slides: $('.scrolling-text-section'),
         scrollingText: $('.scrolling-text-container'),
         people:$('.people-section'),
@@ -223,16 +225,14 @@
             $el: $els.header,
             $tween: $els.logo,
             viewportTop: 0,
-            viewportBottom: 0,
+            viewportHeight: 0,
             tweenFrom: {
-                y: getPerc(30),
-                z:0,
+                top: getPerc(30),
                 scale: 1,
                 opacity: 0.7
             },
             tweenTo: {
-                y: getPerc(78),
-                z:0,
+                top: getPerc(78),
                 scale: 0.9,
                 opacity: -0.7
             }
@@ -243,7 +243,7 @@
             $el: $els.header,
             $tween: $els.title,
             viewportTop: 0,
-            viewportBottom: 0,
+            viewportHeight: 0,
             tweenFrom: {
                 top: getPerc(110)
             },
@@ -257,7 +257,7 @@
             $el: $els.firstBanner,
             $tween: $els.firstContentTop,
             viewportTop: 0,
-            viewportBottom: 1,
+            viewportHeight: 1,
             tweenFrom: {
                 top: getPerc(36)
             },
@@ -270,7 +270,7 @@
             $el: $els.firstBanner,
             $tween: $els.firstContentBottom,
             viewportTop: 0,
-            viewportBottom: 1,
+            viewportHeight: 1,
             tweenFrom: {
                 top: getPerc(38)
             },
@@ -283,7 +283,7 @@
 //             $el: $els.firstBanner,
 //             $tween: $els.reelPlay,
 //             viewportTop: -0.5,
-//             viewportBottom: 0.5,
+//             viewportHeight: 0.5,
 //             tweenFrom: {
 //                 top: getPerc(100)
 //             },
@@ -292,14 +292,17 @@
 //             }
 //         });
 
-// REEL close play options
     scrollWatcher.watch({
-            $el: $els.secondBanner,
-            viewportTop: 0.3,
-            viewportBottom: 2,
-            onExitViewport: function(){
-                $('.reel-play-container').removeClass('show'); 
+            $el: $els.firstBanner,
+            viewportTop:-1,
+            viewportHeight: 1.8,
+            onEnterViewport: function(){
+                $els.reelVideo[0].play();
             },
+            onExitViewport: function(){
+                $els.reelVideo[0].pause();
+                $('.reel-play-container').removeClass('show'); 
+            }
         });
 
 //Second Banner
@@ -307,7 +310,7 @@
             $el: $els.secondBanner,
             $tween: $els.secondBannerContent,
             viewportTop: 0,
-            viewportBottom: 1.1,
+            viewportHeight: 1.1,
             tweenFrom: {
                 top: -80
                 // top: getPerc(-8)
@@ -323,7 +326,7 @@
 //             $el: $els.portfolio,
 //             $tween: $els.portfolioText,
 //             viewportTop: 3,
-//             viewportBottom: 3,
+//             viewportHeight: 3,
 //             tweenFrom: {
 //                 top: getPerc(-30)
 //             },
@@ -335,7 +338,7 @@
 //             $el: $els.portfolioTextWatcher,
 //             $tween: $els.portfolioContent,
 //             viewportTop: -0.5,
-//             viewportBottom: -0.5,
+//             viewportHeight: -0.5,
 //             tweenFrom: {
 //                 top: getPerc(23)
 //             },
@@ -347,7 +350,7 @@
 //             $el: $els.portfolio,
 //             $tween: $els.portfolioContentWhite,
 //             viewportTop: 4,
-//             viewportBottom: 4,
+//             viewportHeight: 4,
 //             tweenFrom: {
 //                 top: getPerc(-100)
 //             },
@@ -360,7 +363,7 @@
     scrollWatcher.watch({
             $el: $els.portfolio,
             viewportTop: 0,
-            viewportBottom: 0,
+            viewportHeight: 0,
             onEnterOrExitViewport: function (e) {
                 if (e.progress < 0.5) {
                  this.$el.toggleClass('is-fixed', e.isInViewport);
@@ -372,7 +375,7 @@
     scrollWatcher.watch({
             $el: $els.portfolio,
             viewportTop: 1.12,
-            viewportBottom: 1.12,
+            viewportHeight: 0,
             onEnterOrExitViewport: function (e) {
                 if (e.progress > 0.5) {
                 this.$el.toggleClass('is-fixed', e.isInViewport);
@@ -386,7 +389,7 @@
             $el: $els.portfolio,
             $tween: $els.portfolioTiles,
             viewportTop: -0.38,
-            viewportBottom: -0.38,
+            viewportHeight: 0,
             tweenFrom: {
                 height: getPerc(90)
             },
@@ -399,7 +402,7 @@
 //     scrollWatcher.watch({
 //             $el: $els.portfolio,
 //             viewportTop: -1.36,
-//             viewportBottom: -1.36,
+//             viewportHeight: -1.36,
 //             onEnterOrExitViewport: function (e) { 
 //                 this.$el.toggleClass('cross-fade');
 //                 // $t.toggleClass('swap');
@@ -410,7 +413,7 @@
             $el: $els.thirdBanner,
             $tween: $els.thirdBannerContent,
             viewportTop: 0,
-            viewportBottom: 1,
+            viewportHeight: 1,
             tweenFrom: {
                 top: getPerc(-8)
             },  
@@ -423,7 +426,7 @@
 //             $el: $els.seemlessVideo,
 //             $tween: $els.seemlessVideoContent,
 //             viewportTop: 0,
-//             viewportBottom: 1,
+//             viewportHeight: 1,
 //             tweenFrom: {
 //                 top: getPerc(8)
 //             },
@@ -431,6 +434,17 @@
 //                 top: getPerc(30)
 //             }
 //         });
+    scrollWatcher.watch({
+            $el: $els.seemlessVideo,
+            viewportTop:-0.18,
+            viewportHeight: 1.18,
+            onEnterViewport: function(){
+                $els.seemlessVideoLoop[0].play();
+            },
+            onExitViewport: function(){
+                $els.seemlessVideoLoop[0].pause();
+            }
+        });
 
 // People section Content
     scrollWatcher.watch({
@@ -446,8 +460,8 @@
 // People randomized
     scrollWatcher.watch({
             $el: $els.people,
-            viewportTop: -0.5,
-            viewportBottom: 1.5,
+            viewportTop: -0.6,
+            viewportHeight: 1.8,
             onEnterViewport: randomizePeople,
         });
 
@@ -466,8 +480,8 @@
 // Scrolling Text Section
     scrollWatcher.watch({
             $el: $els.slides,
-            viewportTop: 0.1,
-            viewportBottom: 1,
+            viewportTop: 0,
+            viewportHeight: 1.2,
             onEnterOrExitViewport: function (e) {
                 $els.scrollingText.toggleClass('animate-me');
             },
@@ -482,7 +496,7 @@
         $el: $els.footer,
         $tween: $els.footerContent,
         viewportTop: 0,
-        viewportBottom: 1,
+        viewportHeight: 1,
         tweenFrom: {
             top: getPerc(1)
         },

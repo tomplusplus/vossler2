@@ -3,7 +3,6 @@
   image: media/portfolio/vossler-reel-2016.png
   featured: 1
   featured_image: media/portfolio/featured-1.png
-  source: //player.vimeo.com/video/224385329
   path: //player.vimeo.com/video/224385329
   embed: true
 
@@ -12,15 +11,15 @@
   image: media/portfolio/tmobile-lemonade.jpg
   featured: 2
   featured_image: media/portfolio/featured-2.png
-  source: //player.vimeo.com/video/224715122
-  embed: true
+  path: //player.vimeo.com/video/224715122
+  embed: true 
 
 - title: "HTC: You'll Hear It"
   description: 
   image: media/portfolio/htc-youll-hear-it.jpg
   featured: 3
   featured_image: media/portfolio/featured-3.png
-  source: //player.vimeo.com/video/224713776
+  path: //player.vimeo.com/video/224713776
   embed: true
 
 - title: "T-Mobile: Underwater Unboxing"
@@ -28,7 +27,7 @@
   image: media/portfolio/tmobile-underwater.png
   featured: 4
   featured_image: media/portfolio/featured-4.png
-  source: //player.vimeo.com/video/224714547
+  path: //player.vimeo.com/video/224714547
   embed: true
 
 - title: "BTS: T-mobile Underwater Unoxing"
@@ -36,7 +35,7 @@
   image: media/portfolio/bts-tmobile-underwater.png
   featured: 5
   featured_image: media/portfolio/featured-5.png
-  source: //player.vimeo.com/video/224714603
+  path: //player.vimeo.com/video/224714603
   embed: true
 
 - title: "T-Mobile: T-Mobile Plans Nationwide 5G"
@@ -44,7 +43,7 @@
   image: media/portfolio/tmobile-5g.jpg
   featured: 6
   featured_image: media/portfolio/featured-6.png
-  source: //player.vimeo.com/video/224714034
+  path: //player.vimeo.com/video/224714034
   embed: true
 
 - title: "Boeing/Hainan Airlines Global: A Dream Takes Flight"
@@ -52,7 +51,7 @@
   image: media/portfolio/boeing-hainan-flight.jpg
   featured: 7
   featured_image: media/portfolio/featured-7.png
-  source: //player.vimeo.com/video/224713939
+  path: //player.vimeo.com/video/224713939
   embed: true
 
 - title: "T-Mobile: T-Mobile ONEsie"
@@ -60,7 +59,7 @@
   image: media/portfolio/tmobile-onesie.jpg
   featured: 8
   featured_image: media/portfolio/featured-8.png
-  source: //player.vimeo.com/video/224714098
+  path: //player.vimeo.com/video/224714098
   embed: true
 
 - title: "BTS: T-Mobile ONEsie"
@@ -68,7 +67,7 @@
   featured: 9
   featured_image: media/portfolio/featured-9.png
   image: media/portfolio/bts-tmobile-onsie.png
-  source: //player.vimeo.com/video/224714701
+  path: //player.vimeo.com/video/224714701
   embed: true
 
 - title: "Vossler Social: Have a Super 4th"
@@ -76,7 +75,7 @@
   featured: 
   featured_image: 
   image: media/portfolio/vossler-super-4th.png
-  source: //player.vimeo.com/video/226081059
+  path: //player.vimeo.com/video/226081059
   embed: true
 
 - title: "Vossler: Models In The Making"
@@ -84,7 +83,7 @@
   eatured: 
   featured_image: 
   image: media/portfolio/vossler-models.png
-  source: //player.vimeo.com/video/226079180
+  path: //player.vimeo.com/video/226079180
   embed: true
 
 - title: "City Church: Vision Day 2015"
@@ -92,7 +91,7 @@
   featured: 
   featured_image: 
   image: media/portfolio/city-church-vision-day.png
-  source: //player.vimeo.com/video/140082326
+  path: //player.vimeo.com/video/140082326
   embed: true
 
 - title: "T-Mobile: Un-carrier Next Level"
@@ -100,7 +99,7 @@
   featured: 
   featured_image: 
   image: media/portfolio/tmobile-uncarrier.jpg
-  source: //player.vimeo.com/video/224714271
+  path: //player.vimeo.com/video/224714271
   embed: true
 
 - title: "T-Mobile: Our 5G Future"
@@ -108,103 +107,103 @@
   featured: 
   featured_image: 
   image: media/portfolio/tmobile-5g-future.png
-  source: //player.vimeo.com/video/224714373
+  path: //player.vimeo.com/video/224714373
   embed: true
 
 
 - title: "BTS: T-Mobile Our 5G Future"
   description: 
   image: media/portfolio/bts-tmobile-5g-future.png
-  source: //player.vimeo.com/video/224979654
+  path: //player.vimeo.com/video/224979654
   embed: true
 
 - title: "Vossler Social: Finger Dance"
   description: 
   image: media/portfolio/vossler-finger-dance.png
-  source: //player.vimeo.com/video/224978727
+  path: //player.vimeo.com/video/224978727
   embed: true
 
 - title: "Xerox: XRC"
   description: 
   image: media/portfolio/xerox-xrc.png
-  source: //player.vimeo.com/video/124074828
+  path: //player.vimeo.com/video/124074828
   embed: true
 
 - title: "T-Mobile @Work"
   description: 
   image: media/portfolio/tmobile-work.jpg
-  source: //player.vimeo.com/video/224716301
+  path: //player.vimeo.com/video/224716301
   embed: true
 
 - title: "T-Mobile: Unboxing the new LG G5"
   description: 
   image: media/portfolio/tmobile-unboxing-lg5g.jpg
-  source: //player.vimeo.com/video/226084673
+  path: //player.vimeo.com/video/226084673
   embed: true
 
 - title: "HTC One A9 - Be Brilliant"
   description: 
   image: media/portfolio/htc-be-brilliant.png
-  source: //player.vimeo.com/video/159980537
+  path: //player.vimeo.com/video/159980537
   embed: true
 
 - title: "BTS: HTC One A9 - Be Brilliant"
   description: 
   image: media/portfolio/bts-htc-be-brilliant.png
-  source: //player.vimeo.com/video/224979247
+  path: //player.vimeo.com/video/224979247
   embed: true
 
 - title: "Lens: Negated Space"
   description: 
   image: media/portfolio/lens-ngated-space.jpg
-  source: //player.vimeo.com/video/139737844
+  path: //player.vimeo.com/video/139737844
   embed: true
 
 - title: "T-Mobile: Spectrum"
   description: 
   image: media/portfolio/tmobile-spectrum.png
-  source: //player.vimeo.com/video/139737870
+  path: //player.vimeo.com/video/139737870
   embed: true
 
 
 - title: "Vossler Social: Flag Day"
   description: 
   image: media/portfolio/vossler-flag-day.png
-  source: //player.vimeo.com/video/224978940
+  path: //player.vimeo.com/video/224978940
   embed: true
 
 - title: "T-Mobile: What's Next John?"
   description: 
   image: media/portfolio/tmobile-whats-next.png
-  source: //player.vimeo.com/video/224715706
+  path: //player.vimeo.com/video/224715706
   embed: true
 
 - title: "Vossler Social: Camera Day"
   description: 
   image: media/portfolio/vossler-camera-day.png
-  source: //player.vimeo.com/video/224979073
+  path: //player.vimeo.com/video/224979073
   embed: true
 
 - title: "Xbox: Destination Brazil"
   description: 
   image: media/portfolio/xbox-destination-brazil.jpg
-  source: //player.vimeo.com/video/139752821
+  path: //player.vimeo.com/video/139752821
   embed: true
 
 - title: "HTC: I'd Tap That"
   description: 
   image: media/portfolio/htc-id-tap-that.jpg
-  source: //player.vimeo.com/video/139737826
+  path: //player.vimeo.com/video/139737826
   embed: true
 
 - title: "Lens: Precious"
   description: 
   image: media/portfolio/lens-precious.png
-  source: //player.vimeo.com/video/139737843
+  path: //player.vimeo.com/video/139737843
   embed: true
 
 - title: "T-Mobile: Pet's Unleashed"
   description: 
   image: media/portfolio/tmobile-pets-unleashed.png
-  source: //player.vimeo.com/video/139737873
+  path: //player.vimeo.com/video/139737873
   embed: true
