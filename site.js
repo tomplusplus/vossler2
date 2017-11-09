@@ -27,6 +27,10 @@
         // console.log(window.scrollY, perc);
     });
 
+    $videoPlayer.on('canplay',function(){
+        $loader.removeClass('show');
+    })
+
 
 /**
  * BINDINGS
@@ -435,7 +439,7 @@
                 top: getPerc(-8)
             },  
             tweenTo: {
-                top: getPerc(11)
+                top: getPerc(9)
             }
         });
 // // Seemles Video Section
@@ -490,7 +494,7 @@
                 top: getPerc(14)
             },
             tweenTo: {
-                top: getPerc(38)
+                top: getPerc(36)
             }
         });
 
@@ -518,7 +522,7 @@
             top: getPerc(1)
         },
         tweenTo: {
-            top: getPerc(26)
+            top: getPerc(32)
         }
     });
 
