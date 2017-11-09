@@ -22,7 +22,7 @@
 
         <section class="header" >
              {% for image in siteData.header_images %}
-                <div class="background-image" style="background-image:url('{{ image.image }}')" ></div>
+                <div class="background-image" style="background-image:url('{{ image }}')" ></div>
              {% endfor %}
             <div class="logo"><img src="{{ siteData.logo.path }}" /></div>
             <div class="main-title">{{ siteData.title }}</div>
