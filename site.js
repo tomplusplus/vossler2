@@ -18,6 +18,8 @@
     // window.onbeforeunload = function () {
     //     window.scrollTo(0, 0);
     // }
+
+    randomizeHeader();
     
 
     $(window).on('scroll',function(){
@@ -175,6 +177,13 @@
         }
     }
 
+    function randomizeHeader(){
+        var $headerImages = $('.header .background-image');
+        $headerImages.removeClass('show')
+        var rand = Math.floor(Math.random() * $headerImages.length);
+        $($headerImages.splice(rand, 1)[0]).addClass('show');
+    }
+    
 
 
     function toggleMenu(){
@@ -219,6 +228,14 @@
     function getPerc(p){
         return window.innerHeight * (p/100);
     }
+// Header Background swap
+    scrollWatcher.watch({
+            $el: $els.header,
+            viewportTop: -0.5,
+            viewportHeight: 1.5,
+            onExitViewport: randomizeHeader
+        });
+
 
 // Logo
     scrollWatcher.watch({

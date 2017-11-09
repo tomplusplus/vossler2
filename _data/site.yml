@@ -5,7 +5,11 @@ title: Vossler
 logo:
   path: /media/logo.png
 
-header_image: /media/head_background.png
+header_images:
+  - image: /media/head_background_1.png
+  - image: /media/head_background_2.png   
+  - image: /media/head_background_3.png   
+  
 
 footer_image: /media/footer_background.png
 

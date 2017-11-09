@@ -455,6 +455,10 @@ section.header{
     .background-image{
         height: 110vh;
         background-position: top right;
+        display: none;
+        &.show{
+            display: block;
+        }
     }
 }
 .logo{
