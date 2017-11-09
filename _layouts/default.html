@@ -21,10 +21,10 @@
     <div class="container">
 
         <section class="header" >
-             {% for image in siteData.header_image %}
-                <div class="background-image" style="background-image:url('{{ image }}')" ></div>
+             {% for image in siteData.header_images %}
+                <div class="background-image" style="background-image:url('{{ image.image }}')" ></div>
              {% endfor %}
-            <div class="logo"><img src="{{ siteData.logo.path }}" /></div>
+            <div class="logo"><img src="{{ siteData.logo_path }}" /></div>
             <div class="main-title">{{ siteData.title }}</div>
 
             <div class="menu">
@@ -207,7 +207,7 @@
 
             <h5><a href="https://vossler.bamboohr.com/jobs/" target="_blank">Want to work here?</a></h5>
             <div class="footer-bar">
-                <div class="footer-logo"><img src="{{ siteData.logo.path }}" class="light" /></div>
+                <div class="footer-logo"><img src="{{ siteData.logo_path }}" class="light" /></div>
                 <p class="footer-text">
                     <span>Copyright &copy; 2017 Vossler</span>
                     <span class="bar"></span>
