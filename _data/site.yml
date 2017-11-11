@@ -36,5 +36,5 @@ social_media:
     url: 'http://linkedin.com'
 
 google_analytics:
-  html: '<div></div>'
+  description: '<div></div>'
   
