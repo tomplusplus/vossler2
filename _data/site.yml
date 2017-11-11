@@ -21,4 +21,20 @@ reel:
 seemless_video:
   path: 
   preview_path: /media/Vossler_VS_Animal_Loop.mp4
+
+social_media:
+  - name: 'Facebook'
+    image: 'assets/icon-facebook.png'
+    url: 'http://facebook.com'
+
+  - name: 'Instagram'
+    image: 'assets/icon-instagram.png'
+    url: 'http://instagram.com'
+
+  - name: 'LinkedIn'
+    image: 'assets/icon-linkedin.png'
+    url: 'http://linkedin.com'
+
+google_analytics:
+  html: '<div></div>'
   

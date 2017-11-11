@@ -46,6 +46,10 @@
     $('.menu-item.work').on('click', showPortfolioFull);
     $('.close-portfolio').on('click', hidePortfolioFull);
 
+    $('.menu-item.contact').on('click',function(){
+
+    });
+
 
     $('.reel-section').on('click', function () {
         $('.reel-play-container').addClass('show');        

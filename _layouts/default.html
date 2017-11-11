@@ -2,6 +2,7 @@
 
 {% assign siteData = site.data.site %}
 {% assign portfolio = site.data.portfolio %}
+{% assign socialMedia = site.data.site.social_media%}
 
 <html>
 
@@ -214,14 +215,13 @@
                     <a href="">Legal</a>
                 </p>
                 <div class="social-media light">
-                    <div class="social-media-icon"><a href="http://facebook.com" target="_blank"><img src="assets/icon-facebook.png" title="Facebook" /></a></div>
-                    <div class="social-media-icon"><a href="http://instagram.com" target="_blank"><img src="assets/icon-instagram.png" title="Instagram" /></a></div>
-                    <div class="social-media-icon"><a href="http://linkedin.com" target="_blank"><img src="assets/icon-linkedin.png" title="Linkedin" /></a></div>
-                </div>
-                <div class="social-media dark">
-                    <div class="social-media-icon"><a href="http://facebook.com" target="_blank"><img src="assets/icon-facebook-dark.png" title="Facebook" /></a></div>
-                    <div class="social-media-icon"><a href="http://instagram.com" target="_blank"><img src="assets/icon-instagram-dark.png" title="Instagram" /></a></div>
-                    <div class="social-media-icon"><a href="http://linkedin.com" target="_blank"><img src="assets/icon-linkedin-dark.png" title="Linkedin" /></a></div>
+                {% for social in socialMedia %}
+                    <div class="social-media-icon">
+                        <a href="{{social.url}}" target="_blank">
+                            <img src="{{social.image}}" title="{{social.name}}" />
+                        </a>
+                    </div>
+                {% endfor %}
                 </div>
             </div>
         </section>
